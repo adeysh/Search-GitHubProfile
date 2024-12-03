@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search GitHub Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+
+</head>
+
+<body>
+    <h1>Search Github Profile</h1>
+    <div class="search_container">
+        <input type="text" name="searchbar" id="searchbar" placeholder="Enter Your GitHub Username">
+        <button type="submit" id="searchBtn">Search</button>
+    </div>
+    <div class="not_found_container hide" id="notFound">
+        <h2>NOT FOUND</h2>
+    </div>
+    <div class="profile_container hide" id="profile_container">
+        <div class="profile_header">
+            <div class="profile_name_and_pfp" id="profile_name_and_pfp">
+            </div>
+        </div>
+        <div class="profile_about" id="profile_about">
+            <h1>About</h1>
+            <p id="profile_about_bio">
+            </p>
+        </div>
+        <div class="profile_details">
+            <div class="followers">
+                <h3>Followers</h3>
+                <p id="followers"></p>
+            </div>
+            <div class="followings">
+                <h3>Followings</h3>
+                <p id="followings"></p>
+            </div>
+            <div class="repos">
+                <h3>Repositories</h3>
+                <p id="repos"></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
